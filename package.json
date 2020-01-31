@@ -1,0 +1,15 @@
+{
+  "name": "pa-proto.landrs.org",
+  "version": "0.0.1",
+  "description": "Trifid deployment for landrs SPARQL Endpoint",
+  "main": "index.js",
+  "dependencies": {
+    "trifid": "^2.3.2",
+    "hydra-box": "0.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "trifid --config config.json",
+    "start-local": "DEBUG=trifid:* trifid --config config.local.json"
+  }
+}
