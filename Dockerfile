@@ -49,6 +49,7 @@ RUN apt-get update \
 
 # Copy the package.json and install the dependencies
 COPY package*.json ./
+COPY npm-shrinkwrap.json ./
 RUN npm install
 COPY . .
 
